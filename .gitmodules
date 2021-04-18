@@ -1,0 +1,6 @@
+[submodule "Sources/cpp/cpp_compatibility"]
+	path = Sources/cpp/cpp_compatibility
+	url = https://github.com/virgiliofornazin/cpp_compatibility.git
+[submodule "Sources/cpp/cpp_extensions"]
+	path = Sources/cpp/cpp_extensions
+	url = https://github.com/virgiliofornazin/cpp_extensions.git
