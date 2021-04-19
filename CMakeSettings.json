@@ -1,0 +1,520 @@
+{
+	"configurations": [
+		{
+			"name": "Windows_ARM_Debug",
+			"generator": "Ninja",
+			"configurationType": "Debug",
+			"inheritEnvironments": [
+				"msvc_arm_x64"
+			],
+			"buildRoot": "${projectDir}/.cmake/build/${name}",
+			"installRoot": "${projectDir}/.cmake/install/${name}",
+			"cmakeCommandArgs": "",
+			"buildCommandArgs": "-v",
+			"ctestCommandArgs": "",
+			"cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake"
+		},
+		{
+			"name": "Windows_ARM_Release",
+			"generator": "Ninja",
+			"configurationType": "Release",
+			"inheritEnvironments": [
+				"msvc_arm_x64"
+			],
+			"buildRoot": "${projectDir}/.cmake/build/${name}",
+			"installRoot": "${projectDir}/.cmake/install/${name}",
+			"cmakeCommandArgs": "",
+			"buildCommandArgs": "-v",
+			"ctestCommandArgs": "",
+			"cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake"
+		},
+		{
+			"name": "Windows_ARM_RelWithDebInfo",
+			"generator": "Ninja",
+			"configurationType": "RelWithDebInfo",
+			"inheritEnvironments": [
+				"msvc_arm_x64"
+			],
+			"buildRoot": "${projectDir}/.cmake/build/${name}",
+			"installRoot": "${projectDir}/.cmake/install/${name}",
+			"cmakeCommandArgs": "",
+			"buildCommandArgs": "-v",
+			"ctestCommandArgs": "",
+			"cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake"
+		},
+		{
+			"name": "Windows_ARM64_Debug",
+			"generator": "Ninja",
+			"configurationType": "Debug",
+			"inheritEnvironments": [
+				"msvc_arm64_x64"
+			],
+			"buildRoot": "${projectDir}/.cmake/build/${name}",
+			"installRoot": "${projectDir}/.cmake/install/${name}",
+			"cmakeCommandArgs": "",
+			"buildCommandArgs": "-v",
+			"ctestCommandArgs": "",
+			"cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake"
+		},
+		{
+			"name": "Windows_ARM64_Release",
+			"generator": "Ninja",
+			"configurationType": "Release",
+			"inheritEnvironments": [
+				"msvc_arm64_x64"
+			],
+			"buildRoot": "${projectDir}/.cmake/build/${name}",
+			"installRoot": "${projectDir}/.cmake/install/${name}",
+			"cmakeCommandArgs": "",
+			"buildCommandArgs": "-v",
+			"ctestCommandArgs": "",
+			"cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake"
+		},
+		{
+			"name": "Windows_ARM64_RelWithDebInfo",
+			"generator": "Ninja",
+			"configurationType": "RelWithDebInfo",
+			"inheritEnvironments": [
+				"msvc_arm64_x64"
+			],
+			"buildRoot": "${projectDir}/.cmake/build/${name}",
+			"installRoot": "${projectDir}/.cmake/install/${name}",
+			"cmakeCommandArgs": "",
+			"buildCommandArgs": "-v",
+			"ctestCommandArgs": "",
+			"cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake"
+		},
+		{
+			"name": "Windows_x64_Debug",
+			"generator": "Ninja",
+			"configurationType": "Debug",
+			"inheritEnvironments": [
+				"msvc_x64_x64"
+			],
+			"buildRoot": "${projectDir}/.cmake/build/${name}",
+			"installRoot": "${projectDir}/.cmake/install/${name}",
+			"cmakeCommandArgs": "",
+			"buildCommandArgs": "-v",
+			"ctestCommandArgs": "",
+			"cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake"
+		},
+		{
+			"name": "Windows_x64_Release",
+			"generator": "Ninja",
+			"configurationType": "Release",
+			"inheritEnvironments": [
+				"msvc_x64_x64"
+			],
+			"buildRoot": "${projectDir}/.cmake/build/${name}",
+			"installRoot": "${projectDir}/.cmake/install/${name}",
+			"cmakeCommandArgs": "",
+			"buildCommandArgs": "-v",
+			"ctestCommandArgs": "",
+			"cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake"
+		},
+		{
+			"name": "Windows_x64_RelWithDebInfo",
+			"generator": "Ninja",
+			"configurationType": "RelWithDebInfo",
+			"inheritEnvironments": [
+				"msvc_x64_x64"
+			],
+			"buildRoot": "${projectDir}/.cmake/build/${name}",
+			"installRoot": "${projectDir}/.cmake/install/${name}",
+			"cmakeCommandArgs": "",
+			"buildCommandArgs": "-v",
+			"ctestCommandArgs": "",
+			"cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake"
+		},
+		{
+			"name": "Windows_x86_Debug",
+			"generator": "Ninja",
+			"configurationType": "Debug",
+			"inheritEnvironments": [
+				"msvc_x86_x64"
+			],
+			"buildRoot": "${projectDir}/.cmake/build/${name}",
+			"installRoot": "${projectDir}/.cmake/install/${name}",
+			"cmakeCommandArgs": "",
+			"buildCommandArgs": "-v",
+			"ctestCommandArgs": "",
+			"cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake"
+		},
+		{
+			"name": "Windows_x86_Release",
+			"generator": "Ninja",
+			"configurationType": "Release",
+			"inheritEnvironments": [
+				"msvc_x86_x64"
+			],
+			"buildRoot": "${projectDir}/.cmake/build/${name}",
+			"installRoot": "${projectDir}/.cmake/install/${name}",
+			"cmakeCommandArgs": "",
+			"buildCommandArgs": "-v",
+			"ctestCommandArgs": "",
+			"cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake"
+		},
+		{
+			"name": "Windows_x86_RelWithDebInfo",
+			"generator": "Ninja",
+			"configurationType": "RelWithDebInfo",
+			"inheritEnvironments": [
+				"msvc_x86_x64"
+			],
+			"buildRoot": "${projectDir}/.cmake/build/${name}",
+			"installRoot": "${projectDir}/.cmake/install/${name}",
+			"cmakeCommandArgs": "",
+			"buildCommandArgs": "-v",
+			"ctestCommandArgs": "",
+			"cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake"
+		},
+		{
+			"name": "WSL_x64_clang12_Debug",
+			"generator": "Ninja",
+			"configurationType": "Debug",
+			"inheritEnvironments": [
+				"linux_clang_x64"
+			],
+			"buildRoot": "${projectDir}/.cmake/build/${name}",
+			"installRoot": "${projectDir}/.cmake/install/${name}",
+			"cmakeCommandArgs": "",
+			"buildCommandArgs": "-v",
+			"ctestCommandArgs": "",
+			"cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake",
+			"addressSanitizerRuntimeFlags": "detect_leaks=0",
+			"intelliSenseMode": "linux-gcc-x64",
+			"variables": [
+				{
+					"name": "CMAKE_C_COMPILER",
+					"value": "/usr/bin/clang-12",
+					"type": "STRING"
+				},
+				{
+					"name": "CMAKE_CXX_COMPILER",
+					"value": "/usr/bin/clang++-12",
+					"type": "STRING"
+				}
+			],
+			"wslPath": "${defaultWSLPath}"
+		},
+		{
+			"name": "WSL_x64_clang12_Release",
+			"generator": "Ninja",
+			"configurationType": "Release",
+			"inheritEnvironments": [
+				"linux_clang_x64"
+			],
+			"buildRoot": "${projectDir}/.cmake/build/${name}",
+			"installRoot": "${projectDir}/.cmake/install/${name}",
+			"cmakeCommandArgs": "",
+			"buildCommandArgs": "-v",
+			"ctestCommandArgs": "",
+			"cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake",
+			"addressSanitizerRuntimeFlags": "detect_leaks=0",
+			"intelliSenseMode": "linux-gcc-x64",
+			"variables": [
+				{
+					"name": "CMAKE_C_COMPILER",
+					"value": "/usr/bin/clang-12",
+					"type": "STRING"
+				},
+				{
+					"name": "CMAKE_CXX_COMPILER",
+					"value": "/usr/bin/clang++-12",
+					"type": "STRING"
+				}
+			],
+			"wslPath": "${defaultWSLPath}"
+		},
+		{
+			"name": "WSL_x64, clang12_RelWithDebInfo",
+			"generator": "Ninja",
+			"configurationType": "RelWithDebInfo",
+			"inheritEnvironments": [
+				"linux_clang_x64"
+			],
+			"buildRoot": "${projectDir}/.cmake/build/${name}",
+			"installRoot": "${projectDir}/.cmake/install/${name}",
+			"cmakeCommandArgs": "",
+			"buildCommandArgs": "-v",
+			"ctestCommandArgs": "",
+			"cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake",
+			"addressSanitizerRuntimeFlags": "detect_leaks=0",
+			"intelliSenseMode": "linux-gcc-x64",
+			"variables": [
+				{
+					"name": "CMAKE_C_COMPILER",
+					"value": "/usr/bin/clang-12",
+					"type": "STRING"
+				},
+				{
+					"name": "CMAKE_CXX_COMPILER",
+					"value": "/usr/bin/clang++-12",
+					"type": "STRING"
+				}
+			],
+			"wslPath": "${defaultWSLPath}"
+		},
+		{
+			"name": "WSL_x64_gcc10_Debug",
+			"generator": "Ninja",
+			"configurationType": "Debug",
+			"inheritEnvironments": [
+				"linux_x64"
+			],
+			"buildRoot": "${projectDir}/.cmake/build/${name}",
+			"installRoot": "${projectDir}/.cmake/install/${name}",
+			"cmakeCommandArgs": "",
+			"buildCommandArgs": "-v",
+			"ctestCommandArgs": "",
+			"cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake",
+			"addressSanitizerRuntimeFlags": "detect_leaks=0",
+			"intelliSenseMode": "linux-gcc-x64",
+			"variables": [
+				{
+					"name": "CMAKE_C_COMPILER",
+					"value": "/usr/bin/gcc-10",
+					"type": "STRING"
+				},
+				{
+					"name": "CMAKE_CXX_COMPILER",
+					"value": "/usr/bin/\"g++-10\"",
+					"type": "STRING"
+				}
+			],
+			"wslPath": "${defaultWSLPath}"
+		},
+		{
+			"name": "WSL_x64_gcc10_Release",
+			"generator": "Ninja",
+			"configurationType": "Release",
+			"inheritEnvironments": [
+				"linux_x64"
+			],
+			"buildRoot": "${projectDir}/.cmake/build/${name}",
+			"installRoot": "${projectDir}/.cmake/install/${name}",
+			"cmakeCommandArgs": "",
+			"buildCommandArgs": "-v",
+			"ctestCommandArgs": "",
+			"cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake",
+			"addressSanitizerRuntimeFlags": "detect_leaks=0",
+			"intelliSenseMode": "linux-gcc-x64",
+			"variables": [
+				{
+					"name": "CMAKE_C_COMPILER",
+					"value": "/usr/bin/gcc-10",
+					"type": "STRING"
+				},
+				{
+					"name": "CMAKE_CXX_COMPILER",
+					"value": "/usr/bin/g++-10",
+					"type": "STRING"
+				}
+			],
+			"wslPath": "${defaultWSLPath}"
+		},
+		{
+			"name": "WSL_x64_gcc10_RelWithDebInfo",
+			"generator": "Ninja",
+			"configurationType": "RelWithDebInfo",
+			"inheritEnvironments": [
+				"linux_x64"
+			],
+			"buildRoot": "${projectDir}/.cmake/build/${name}",
+			"installRoot": "${projectDir}/.cmake/install/${name}",
+			"cmakeCommandArgs": "",
+			"buildCommandArgs": "-v",
+			"ctestCommandArgs": "",
+			"cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake",
+			"addressSanitizerRuntimeFlags": "detect_leaks=0",
+			"intelliSenseMode": "linux-gcc-x64",
+			"variables": [
+				{
+					"name": "CMAKE_C_COMPILER",
+					"value": "/usr/bin/gcc-10",
+					"type": "STRING"
+				},
+				{
+					"name": "CMAKE_CXX_COMPILER",
+					"value": "/usr/bin/g++-10",
+					"type": "STRING"
+				}
+			],
+			"wslPath": "${defaultWSLPath}"
+		},
+		{
+			"name": "WSL_x86_clang12_Debug",
+			"generator": "Ninja",
+			"configurationType": "Debug",
+			"inheritEnvironments": [
+				"linux_x86"
+			],
+			"buildRoot": "${projectDir}/.cmake/build/${name}",
+			"installRoot": "${projectDir}/.cmake/install/${name}",
+			"cmakeCommandArgs": "",
+			"buildCommandArgs": "-v",
+			"ctestCommandArgs": "",
+			"cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake",
+			"addressSanitizerRuntimeFlags": "detect_leaks=0",
+			"intelliSenseMode": "linux-gcc-x86",
+			"variables": [
+				{
+					"name": "CMAKE_C_COMPILER",
+					"value": "/usr/bin/clang-12",
+					"type": "STRING"
+				},
+				{
+					"name": "CMAKE_CXX_COMPILER",
+					"value": "/usr/bin/clang++-12",
+					"type": "STRING"
+				}
+			],
+			"wslPath": "${defaultWSLPath}"
+		},
+		{
+			"name": "WSL_x86_clang12_Release",
+			"generator": "Ninja",
+			"configurationType": "Release",
+			"inheritEnvironments": [
+				"linux_x86"
+			],
+			"buildRoot": "${projectDir}/.cmake/build/${name}",
+			"installRoot": "${projectDir}/.cmake/install/${name}",
+			"cmakeCommandArgs": "",
+			"buildCommandArgs": "-v",
+			"ctestCommandArgs": "",
+			"cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake",
+			"addressSanitizerRuntimeFlags": "detect_leaks=0",
+			"intelliSenseMode": "linux-gcc-x86",
+			"variables": [
+				{
+					"name": "CMAKE_C_COMPILER",
+					"value": "/usr/bin/clang-12",
+					"type": "STRING"
+				},
+				{
+					"name": "CMAKE_CXX_COMPILER",
+					"value": "/usr/bin/clang++-12",
+					"type": "STRING"
+				}
+			],
+			"wslPath": "${defaultWSLPath}"
+		},
+		{
+			"name": "WSL_x86, clang12_RelWithDebInfo",
+			"generator": "Ninja",
+			"configurationType": "RelWithDebInfo",
+			"inheritEnvironments": [
+				"linux_x86"
+			],
+			"buildRoot": "${projectDir}/.cmake/build/${name}",
+			"installRoot": "${projectDir}/.cmake/install/${name}",
+			"cmakeCommandArgs": "",
+			"buildCommandArgs": "-v",
+			"ctestCommandArgs": "",
+			"cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake",
+			"addressSanitizerRuntimeFlags": "detect_leaks=0",
+			"intelliSenseMode": "linux-gcc-x86",
+			"variables": [
+				{
+					"name": "CMAKE_C_COMPILER",
+					"value": "/usr/bin/clang-12",
+					"type": "STRING"
+				},
+				{
+					"name": "CMAKE_CXX_COMPILER",
+					"value": "/usr/bin/clang++-12",
+					"type": "STRING"
+				}
+			],
+			"wslPath": "${defaultWSLPath}"
+		},
+		{
+			"name": "WSL_x86_gcc10_Debug",
+			"generator": "Ninja",
+			"configurationType": "Debug",
+			"inheritEnvironments": [
+				"linux_x86"
+			],
+			"buildRoot": "${projectDir}/.cmake/build/${name}",
+			"installRoot": "${projectDir}/.cmake/install/${name}",
+			"cmakeCommandArgs": "",
+			"buildCommandArgs": "-v",
+			"ctestCommandArgs": "",
+			"cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake",
+			"addressSanitizerRuntimeFlags": "detect_leaks=0",
+			"intelliSenseMode": "linux-gcc-x86",
+			"variables": [
+				{
+					"name": "CMAKE_C_COMPILER",
+					"value": "/usr/bin/gcc-10",
+					"type": "STRING"
+				},
+				{
+					"name": "CMAKE_CXX_COMPILER",
+					"value": "/usr/bin/g++-10",
+					"type": "STRING"
+				}
+			],
+			"wslPath": "${defaultWSLPath}"
+		},
+		{
+			"name": "WSL_x86_gcc10_Release",
+			"generator": "Ninja",
+			"configurationType": "Release",
+			"inheritEnvironments": [
+				"linux_x86"
+			],
+			"buildRoot": "${projectDir}/.cmake/build/${name}",
+			"installRoot": "${projectDir}/.cmake/install/${name}",
+			"cmakeCommandArgs": "",
+			"buildCommandArgs": "-v",
+			"ctestCommandArgs": "",
+			"cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake",
+			"addressSanitizerRuntimeFlags": "detect_leaks=0",
+			"intelliSenseMode": "linux-gcc-x86",
+			"variables": [
+				{
+					"name": "CMAKE_C_COMPILER",
+					"value": "/usr/bin/gcc-10",
+					"type": "STRING"
+				},
+				{
+					"name": "CMAKE_CXX_COMPILER",
+					"value": "/usr/bin/g++-10",
+					"type": "STRING"
+				}
+			],
+			"wslPath": "${defaultWSLPath}"
+		},
+		{
+			"name": "WSL_x86_gcc10_RelWithDebInfo",
+			"generator": "Ninja",
+			"configurationType": "RelWithDebInfo",
+			"inheritEnvironments": [
+				"linux_x86"
+			],
+			"buildRoot": "${projectDir}/.cmake/build/${name}",
+			"installRoot": "${projectDir}/.cmake/install/${name}",
+			"cmakeCommandArgs": "",
+			"buildCommandArgs": "-v",
+			"ctestCommandArgs": "",
+			"cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake",
+			"addressSanitizerRuntimeFlags": "detect_leaks=0",
+			"intelliSenseMode": "linux-gcc-x86",
+			"variables": [
+				{
+					"name": "CMAKE_C_COMPILER",
+					"value": "/usr/bin/gcc-10",
+					"type": "STRING"
+				},
+				{
+					"name": "CMAKE_CXX_COMPILER",
+					"value": "/usr/bin/g++-10",
+					"type": "STRING"
+				}
+			],
+			"wslPath": "${defaultWSLPath}"
+		}
+	]
+}
