@@ -1,6 +1,11 @@
+# VS/VSCode/CMake
 .vs/
 .vscode/
 .cmake/
-build/.cmake
-build/CMakeCache.txt
+build/.cmake/
 build/CMakeFiles/
+build/CMakeCache.txt
+
+# Backup and temporary files
+.bak
+.tmp
