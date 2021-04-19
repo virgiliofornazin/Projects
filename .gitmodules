@@ -1,3 +1,6 @@
+[submodule "PackageManagers/vcpkg"]
+	path = PackageManagers/vcpkg
+	url = https://github.com/microsoft/vcpkg.git
 [submodule "Sources/cpp/cpp_compatibility"]
 	path = Sources/cpp/cpp_compatibility
 	url = https://github.com/virgiliofornazin/cpp_compatibility.git
