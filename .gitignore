@@ -1,11 +1,24 @@
+# Backup and temporary files
+.bak
+.tmp
+
 # VS/VSCode/CMake
 .vs/
 .vscode/
 .cmake/
 build/.cmake/
 build/CMakeFiles/
+build/Debug/
+build/Release/
+build/RelMinSize/
+build/RelWithDebInfo/
+build/win32/
+build/x64/
+build/arm64/
+build/arm/
 build/CMakeCache.txt
-
-# Backup and temporary files
-.bak
-.tmp
+build/cmake*.cmake
+build/*.filters
+build/*.vcxproj
+build/*.sln
+build/*.ninja
