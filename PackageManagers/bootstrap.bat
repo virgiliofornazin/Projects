@@ -10,7 +10,7 @@ echo bootstrapping vcpkg...
 
 call bootstrap-vcpkg.bat
 
-for /f tokens=1 %%package in (../PackageList/vcpkg/package-list.txt) do call ../Scripts/vcpkg_install_for_windows.bat "%%package"
+for /f %%G in (../PackageList/vcpkg/package-list.txt) do call ../../Scripts/vcpkg_install_for_windows.bat %%G
 
 vcpkg list
 

@@ -8,6 +8,8 @@ echo" bootstrapping vcpkg..."
 
 ./bootstrap-vcpkg.sh
 
+vcpkg update
+
 package_list="../Packages/vcpkg/package_list.txt"
 
 if [[ -f "$package_list" ]]

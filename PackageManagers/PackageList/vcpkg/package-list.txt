@@ -1,8 +1,9 @@
-boost
-openssl
+mimalloc
+sqlite3
+lzo
 zlib
 zstd
-lzo
 bzip2
 liblzma
-sqlite
+openssl
+boost
