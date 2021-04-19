@@ -6,7 +6,7 @@ pushd %~dp0\vcpkg
 
 echo bootstrapping vcpkg...
 
-call bootstrap_vcpkg.bat
+call bootstrap-vcpkg.bat
 
 vcpkg install boost:x86-uwp
 vcpkg install boost:x86-windows

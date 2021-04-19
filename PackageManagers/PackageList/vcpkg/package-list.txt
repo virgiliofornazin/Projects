@@ -1,0 +1,8 @@
+boost
+openssl
+zlib
+zstd
+lzo
+bzip2
+liblzma
+sqlite

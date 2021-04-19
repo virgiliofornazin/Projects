@@ -1,3 +1,11 @@
 #!/bin/sh
 
-chown +r -R *
+source ../Scripts/is_wsl.sh
+
+if [[ $IS_WSL == false ]]; then
+
+    echo "unprotecting package managers folders from modifications..."
+
+    chmod +r -R *
+
+fi

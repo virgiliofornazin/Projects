@@ -1,0 +1,8 @@
+arm-windows
+arm64-uwp
+arm64-windows-static
+x64-windows
+x64-windows-static
+x86-uwp
+x86-windows
+x86-windows-static
