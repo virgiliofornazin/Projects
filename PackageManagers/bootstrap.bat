@@ -1,21 +1,16 @@
 @echo off
 
-call %~dp0\unprotect.bat
+pushd %~dp0
 
-pushd %~dp0\vcpkg
+call unprotect.bat
+
+cd vcpkg
 
 echo bootstrapping vcpkg...
 
 call bootstrap-vcpkg.bat
 
-vcpkg install boost:x86-uwp
-vcpkg install boost:x86-windows
-vcpkg install boost:x86-windows-static
-vcpkg install boost:x64-windows
-vcpkg install boost:x64-windows-static
-vcpkg install boost:arm-windows
-vcpkg install boost:arm64-uwp
-vcpkg install boost:arm64-windows-static
+for /f tokens=1 %%package in (../PackageList/vcpkg/package-list.txt) do call ../Scripts/vcpkg_install_for_windows.bat "%%package"
 
 vcpkg list
 

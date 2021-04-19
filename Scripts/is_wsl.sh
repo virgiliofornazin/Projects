@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 WSL_VERSION=`cat /proc/version`
 IS_WSL=`cat /proc/version | grep ucrosoft`

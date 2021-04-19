@@ -6,6 +6,6 @@ if [[ $IS_WSL == false ]]; then
 
     echo "protecting package managers folders from modifications..."
 
-    chmod -r -R *
+    chmod -r -R vcpkg
 
 fi
