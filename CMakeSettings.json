@@ -7,8 +7,8 @@
             "inheritEnvironments": [
                 "msvc_arm_x64"
             ],
-            "buildRoot": "${projectDir}/build/.cmake/Debug/Windows/MSVC/${name}",
-            "installRoot": "${projectDir}/build/.cmake-install/arm/Debug/Windows/MSVC/${name}",
+            "buildRoot": "${projectDir}/build/.cmake/Debug/Windows/MSVC",
+            "installRoot": "${projectDir}/build/.cmake-install/arm/Debug/Windows/MSVC",
             "cmakeCommandArgs": "",
             "buildCommandArgs": "-v",
             "ctestCommandArgs": "",
@@ -21,8 +21,8 @@
             "inheritEnvironments": [
                 "msvc_arm_x64"
             ],
-            "buildRoot": "${projectDir}/build/.cmake/arm/Release/Windows/MSVC/${name}",
-            "installRoot": "${projectDir}/build/.cmake-install/arm/Release/Windows/MSVC/${name}",
+            "buildRoot": "${projectDir}/build/.cmake/arm/Release/Windows/MSVC",
+            "installRoot": "${projectDir}/build/.cmake-install/arm/Release/Windows/MSVC",
             "cmakeCommandArgs": "",
             "buildCommandArgs": "-v",
             "ctestCommandArgs": "",
@@ -35,8 +35,8 @@
             "inheritEnvironments": [
                 "msvc_arm_x64"
             ],
-            "buildRoot": "${projectDir}/build/.cmake/arm/RelMinSize/Windows/MSVC/${name}",
-            "installRoot": "${projectDir}/build/.cmake-install/arm/RelMinSize/Windows/MSVC/${name}",
+            "buildRoot": "${projectDir}/build/.cmake/arm/RelMinSize/Windows/MSVC",
+            "installRoot": "${projectDir}/build/.cmake-install/arm/RelMinSize/Windows/MSVC",
             "cmakeCommandArgs": "",
             "buildCommandArgs": "-v",
             "ctestCommandArgs": "",
@@ -49,8 +49,8 @@
             "inheritEnvironments": [
                 "msvc_arm_x64"
             ],
-            "buildRoot": "${projectDir}/build/.cmake/arm/RelWithDebInfo/Windows/MSVC/${name}",
-            "installRoot": "${projectDir}/build/.cmake-install/arm/RelWithDebInfo/Windows/MSVC/${name}",
+            "buildRoot": "${projectDir}/build/.cmake/arm/RelWithDebInfo/Windows/MSVC",
+            "installRoot": "${projectDir}/build/.cmake-install/arm/RelWithDebInfo/Windows/MSVC",
             "cmakeCommandArgs": "",
             "buildCommandArgs": "-v",
             "ctestCommandArgs": "",
@@ -63,8 +63,8 @@
             "inheritEnvironments": [
                 "msvc_arm64_x64"
             ],
-            "buildRoot": "${projectDir}/build/.cmake/arm64/Debug/Windows/MSVC/${name}",
-            "installRoot": "${projectDir}/build/.cmake-install/arm64/Debug/Windows/MSVC/${name}",
+            "buildRoot": "${projectDir}/build/.cmake/arm64/Debug/Windows/MSVC",
+            "installRoot": "${projectDir}/build/.cmake-install/arm64/Debug/Windows/MSVC",
             "cmakeCommandArgs": "",
             "buildCommandArgs": "-v",
             "ctestCommandArgs": "",
@@ -77,8 +77,8 @@
             "inheritEnvironments": [
                 "msvc_arm64_x64"
             ],
-            "buildRoot": "${projectDir}/build/.cmake/arm64/Release/Windows/MSVC/${name}",
-            "installRoot": "${projectDir}/build/.cmake-install/arm64/Release/Windows/MSVC/${name}",
+            "buildRoot": "${projectDir}/build/.cmake/arm64/Release/Windows/MSVC",
+            "installRoot": "${projectDir}/build/.cmake-install/arm64/Release/Windows/MSVC",
             "cmakeCommandArgs": "",
             "buildCommandArgs": "-v",
             "ctestCommandArgs": "",
@@ -91,8 +91,8 @@
             "inheritEnvironments": [
                 "msvc_arm64_x64"
             ],
-            "buildRoot": "${projectDir}/build/.cmake/arm64/RelMinSize/Windows/MSVC/${name}",
-            "installRoot": "${projectDir}/build/.cmake-install/arm64/RelMinSize/Windows/MSVC/${name}",
+            "buildRoot": "${projectDir}/build/.cmake/arm64/RelMinSize/Windows/MSVC",
+            "installRoot": "${projectDir}/build/.cmake-install/arm64/RelMinSize/Windows/MSVC",
             "cmakeCommandArgs": "",
             "buildCommandArgs": "-v",
             "ctestCommandArgs": "",
@@ -105,8 +105,8 @@
             "inheritEnvironments": [
                 "msvc_arm64_x64"
             ],
-            "buildRoot": "${projectDir}/build/.cmake/arm64/RelWithDebInfo/Windows/MSVC/${name}",
-            "installRoot": "${projectDir}/build/.cmake-install/arm64/RelWithDebInfo/Windows/MSVC/${name}",
+            "buildRoot": "${projectDir}/build/.cmake/arm64/RelWithDebInfo/Windows/MSVC",
+            "installRoot": "${projectDir}/build/.cmake-install/arm64/RelWithDebInfo/Windows/MSVC",
             "cmakeCommandArgs": "",
             "buildCommandArgs": "-v",
             "ctestCommandArgs": "",
@@ -119,8 +119,8 @@
             "inheritEnvironments": [
                 "msvc_x86_x64"
             ],
-            "buildRoot": "${projectDir}/build/.cmake/x86/Debug/Windows/MSVC/${name}",
-            "installRoot": "${projectDir}/build/.cmake-install/x86/Debug/Windows/MSVC/${name}",
+            "buildRoot": "${projectDir}/build/.cmake/x86/Debug/Windows/MSVC",
+            "installRoot": "${projectDir}/build/.cmake-install/x86/Debug/Windows/MSVC",
             "cmakeCommandArgs": "",
             "buildCommandArgs": "-v",
             "ctestCommandArgs": "",
@@ -133,8 +133,8 @@
             "inheritEnvironments": [
                 "msvc_x86_x64"
             ],
-            "buildRoot": "${projectDir}/build/.cmake/x86/Release/Windows/MSVC/${name}",
-            "installRoot": "${projectDir}/build/.cmake-install/x86/Release/Windows/MSVC/${name}",
+            "buildRoot": "${projectDir}/build/.cmake/x86/Release/Windows/MSVC",
+            "installRoot": "${projectDir}/build/.cmake-install/x86/Release/Windows/MSVC",
             "cmakeCommandArgs": "",
             "buildCommandArgs": "-v",
             "ctestCommandArgs": "",
@@ -147,8 +147,8 @@
             "inheritEnvironments": [
                 "msvc_x86_x64"
             ],
-            "buildRoot": "${projectDir}/build/.cmake/x86/RelMinSize/Windows/MSVC/${name}",
-            "installRoot": "${projectDir}/build/.cmake-install/x86/RelMinSize/Windows/MSVC/${name}",
+            "buildRoot": "${projectDir}/build/.cmake/x86/RelMinSize/Windows/MSVC",
+            "installRoot": "${projectDir}/build/.cmake-install/x86/RelMinSize/Windows/MSVC",
             "cmakeCommandArgs": "",
             "buildCommandArgs": "-v",
             "ctestCommandArgs": "",
@@ -161,8 +161,8 @@
             "inheritEnvironments": [
                 "msvc_x86_x64"
             ],
-            "buildRoot": "${projectDir}/build/.cmake/x86/RelWithDebInfo/Windows/MSVC/${name}",
-            "installRoot": "${projectDir}/build/.cmake-install/x86/RelWithDebInfo/Windows/MSVC/${name}",
+            "buildRoot": "${projectDir}/build/.cmake/x86/RelWithDebInfo/Windows/MSVC",
+            "installRoot": "${projectDir}/build/.cmake-install/x86/RelWithDebInfo/Windows/MSVC",
             "cmakeCommandArgs": "",
             "buildCommandArgs": "-v",
             "ctestCommandArgs": "",
@@ -175,8 +175,8 @@
             "inheritEnvironments": [
                 "msvc_x64_x64"
             ],
-            "buildRoot": "${projectDir}/build/.cmake/x64/Debug/Windows/MSVC/${name}",
-            "installRoot": "${projectDir}/build/.cmake-install/x64/Debug/Windows/MSVC/${name}",
+            "buildRoot": "${projectDir}/build/.cmake/x64/Debug/Windows/MSVC",
+            "installRoot": "${projectDir}/build/.cmake-install/x64/Debug/Windows/MSVC",
             "cmakeCommandArgs": "",
             "buildCommandArgs": "-v",
             "ctestCommandArgs": "",
@@ -189,8 +189,8 @@
             "inheritEnvironments": [
                 "msvc_x64_x64"
             ],
-            "buildRoot": "${projectDir}/build/.cmake/x64/Release/Windows/MSVC/${name}",
-            "installRoot": "${projectDir}/build/.cmake-install/x64/Release/Windows/MSVC/${name}",
+            "buildRoot": "${projectDir}/build/.cmake/x64/Release/Windows/MSVC",
+            "installRoot": "${projectDir}/build/.cmake-install/x64/Release/Windows/MSVC",
             "cmakeCommandArgs": "",
             "buildCommandArgs": "-v",
             "ctestCommandArgs": "",
@@ -203,8 +203,8 @@
             "inheritEnvironments": [
                 "msvc_x64_x64"
             ],
-            "buildRoot": "${projectDir}/build/.cmake/x64/RelMinSize/Windows/MSVC/${name}",
-            "installRoot": "${projectDir}/build/.cmake-install/x64/RelMinSize/Windows/MSVC/${name}",
+            "buildRoot": "${projectDir}/build/.cmake/x64/RelMinSize/Windows/MSVC",
+            "installRoot": "${projectDir}/build/.cmake-install/x64/RelMinSize/Windows/MSVC",
             "cmakeCommandArgs": "",
             "buildCommandArgs": "-v",
             "ctestCommandArgs": "",
@@ -217,8 +217,8 @@
             "inheritEnvironments": [
                 "msvc_x64_x64"
             ],
-            "buildRoot": "${projectDir}/build/.cmake/x64/RelWithDebInfo/Windows/MSVC/${name}",
-            "installRoot": "${projectDir}/build/.cmake-install/x64/RelWithDebInfo/Windows/MSVC/${name}",
+            "buildRoot": "${projectDir}/build/.cmake/x64/RelWithDebInfo/Windows/MSVC",
+            "installRoot": "${projectDir}/build/.cmake-install/x64/RelWithDebInfo/Windows/MSVC",
             "cmakeCommandArgs": "",
             "buildCommandArgs": "-v",
             "ctestCommandArgs": "",
@@ -231,8 +231,8 @@
             "inheritEnvironments": [
                 "linux_x86"
             ],
-            "buildRoot": "${projectDir}/build/.cmake/x86/Debug/clang-12/${name}",
-            "installRoot": "${projectDir}/build/.cmake-install/x86/Debug/clang-12/${name}",
+            "buildRoot": "${projectDir}/build/.cmake/x86/Debug/Linux/clang-12",
+            "installRoot": "${projectDir}/build/.cmake-install/x86/Debug/Linux/clang-12",
             "cmakeCommandArgs": "",
             "buildCommandArgs": "-v",
             "ctestCommandArgs": "",
@@ -260,8 +260,8 @@
             "inheritEnvironments": [
                 "linux_x86"
             ],
-            "buildRoot": "${projectDir}/build/.cmake/x86/Release/clang-12/${name}",
-            "installRoot": "${projectDir}/build/.cmake-install/x86/Release/clang-12/${name}",
+            "buildRoot": "${projectDir}/build/.cmake/x86/Release/Linux/clang-12",
+            "installRoot": "${projectDir}/build/.cmake-install/x86/Release/Linux/clang-12",
             "cmakeCommandArgs": "",
             "buildCommandArgs": "-v",
             "ctestCommandArgs": "",
@@ -289,8 +289,8 @@
             "inheritEnvironments": [
                 "linux_x86"
             ],
-            "buildRoot": "${projectDir}/build/.cmake/x86/RelMinSize/clang-12/${name}",
-            "installRoot": "${projectDir}/build/.cmake-install/x86/RelMinSize/clang-12/${name}",
+            "buildRoot": "${projectDir}/build/.cmake/x86/RelMinSize/Linux/clang-12",
+            "installRoot": "${projectDir}/build/.cmake-install/x86/RelMinSize/Linux/clang-12",
             "cmakeCommandArgs": "",
             "buildCommandArgs": "-v",
             "ctestCommandArgs": "",
@@ -318,8 +318,8 @@
             "inheritEnvironments": [
                 "linux_x86"
             ],
-            "buildRoot": "${projectDir}/build/.cmake/x86/RelWithDebInfo/clang-12/${name}",
-            "installRoot": "${projectDir}/build/.cmake-install/x86/RelWithDebInfo/clang-12/${name}",
+            "buildRoot": "${projectDir}/build/.cmake/x86/RelWithDebInfo/Linux/clang-12",
+            "installRoot": "${projectDir}/build/.cmake-install/x86/RelWithDebInfo/Linux/clang-12",
             "cmakeCommandArgs": "",
             "buildCommandArgs": "-v",
             "ctestCommandArgs": "",
@@ -347,8 +347,8 @@
             "inheritEnvironments": [
                 "linux_clang_x64"
             ],
-            "buildRoot": "${projectDir}/build/.cmake/x64/Debug/clang-12/${name}",
-            "installRoot": "${projectDir}/build/.cmake-install/x64/Debug/clang-12/${name}",
+            "buildRoot": "${projectDir}/build/.cmake/x64/Debug/Linux/clang-12",
+            "installRoot": "${projectDir}/build/.cmake-install/x64/Debug/Linux/clang-12",
             "cmakeCommandArgs": "",
             "buildCommandArgs": "-v",
             "ctestCommandArgs": "",
@@ -376,8 +376,8 @@
             "inheritEnvironments": [
                 "linux_clang_x64"
             ],
-            "buildRoot": "${projectDir}/build/.cmake/x64/Release/clang-12/${name}",
-            "installRoot": "${projectDir}/build/.cmake-install/x64/Release/clang-12/${name}",
+            "buildRoot": "${projectDir}/build/.cmake/x64/Release/Linux/clang-12",
+            "installRoot": "${projectDir}/build/.cmake-install/x64/Release/Linux/clang-12",
             "cmakeCommandArgs": "",
             "buildCommandArgs": "-v",
             "ctestCommandArgs": "",
@@ -405,8 +405,8 @@
             "inheritEnvironments": [
                 "linux_clang_x64"
             ],
-            "buildRoot": "${projectDir}/build/.cmake/x64/RelMinSize/clang-12/${name}",
-            "installRoot": "${projectDir}/build/.cmake-install/x64/RelMinSize/clang-12/${name}",
+            "buildRoot": "${projectDir}/build/.cmake/x64/RelMinSize/Linux/clang-12",
+            "installRoot": "${projectDir}/build/.cmake-install/x64/RelMinSize/Linux/clang-12",
             "cmakeCommandArgs": "",
             "buildCommandArgs": "-v",
             "ctestCommandArgs": "",
@@ -434,8 +434,8 @@
             "inheritEnvironments": [
                 "linux_clang_x64"
             ],
-            "buildRoot": "${projectDir}/build/.cmake/x64/RelWithDebInfo/clang-12/${name}",
-            "installRoot": "${projectDir}/build/.cmake-install/x64/RelWithDebInfo/clang-12/${name}",
+            "buildRoot": "${projectDir}/build/.cmake/x64/RelWithDebInfo/Linux/clang-12",
+            "installRoot": "${projectDir}/build/.cmake-install/x64/RelWithDebInfo/Linux/clang-12",
             "cmakeCommandArgs": "",
             "buildCommandArgs": "-v",
             "ctestCommandArgs": "",
@@ -463,8 +463,8 @@
             "inheritEnvironments": [
                 "linux_x86"
             ],
-            "buildRoot": "${projectDir}/build/.cmake/x86/Debug/gcc-10/${name}",
-            "installRoot": "${projectDir}/build/.cmake-install/x86/Debug/gcc-10/${name}",
+            "buildRoot": "${projectDir}/build/.cmake/x86/Debug/Linux/gcc-10",
+            "installRoot": "${projectDir}/build/.cmake-install/x86/Debug/Linux/gcc-10",
             "cmakeCommandArgs": "",
             "buildCommandArgs": "-v",
             "ctestCommandArgs": "",
@@ -492,8 +492,8 @@
             "inheritEnvironments": [
                 "linux_x86"
             ],
-            "buildRoot": "${projectDir}/build/.cmake/x86/Release/gcc-10/${name}",
-            "installRoot": "${projectDir}/build/.cmake-install/x86/Release/gcc-10/${name}",
+            "buildRoot": "${projectDir}/build/.cmake/x86/Release/Linux/gcc-10",
+            "installRoot": "${projectDir}/build/.cmake-install/x86/Release/Linux/gcc-10",
             "cmakeCommandArgs": "",
             "buildCommandArgs": "-v",
             "ctestCommandArgs": "",
@@ -521,8 +521,8 @@
             "inheritEnvironments": [
                 "linux_x86"
             ],
-            "buildRoot": "${projectDir}/build/.cmake/x86/RelMinSize/gcc-10/${name}",
-            "installRoot": "${projectDir}/build/.cmake-install/x86/RelMinSize/gcc-10/${name}",
+            "buildRoot": "${projectDir}/build/.cmake/x86/RelMinSize/Linux/gcc-10",
+            "installRoot": "${projectDir}/build/.cmake-install/x86/RelMinSize/Linux/gcc-10",
             "cmakeCommandArgs": "",
             "buildCommandArgs": "-v",
             "ctestCommandArgs": "",
@@ -550,8 +550,8 @@
             "inheritEnvironments": [
                 "linux_x86"
             ],
-            "buildRoot": "${projectDir}/build/.cmake/x86/RelWithDebInfo/gcc-10/${name}",
-            "installRoot": "${projectDir}/build/.cmake-install/x86/RelWithDebInfo/gcc-10/${name}",
+            "buildRoot": "${projectDir}/build/.cmake/x86/RelWithDebInfo/Linux/gcc-10",
+            "installRoot": "${projectDir}/build/.cmake-install/x86/RelWithDebInfo/Linux/gcc-10",
             "cmakeCommandArgs": "",
             "buildCommandArgs": "-v",
             "ctestCommandArgs": "",
@@ -579,8 +579,8 @@
             "inheritEnvironments": [
                 "linux_x64"
             ],
-            "buildRoot": "${projectDir}/build/.cmake/x64/Debug/gcc-10/${name}",
-            "installRoot": "${projectDir}/build/.cmake-install/x64/Debug/gcc-10/${name}",
+            "buildRoot": "${projectDir}/build/.cmake/x64/Debug/Linux/gcc-10",
+            "installRoot": "${projectDir}/build/.cmake-install/x64/Debug/Linux/gcc-10",
             "cmakeCommandArgs": "",
             "buildCommandArgs": "-v",
             "ctestCommandArgs": "",
@@ -608,8 +608,8 @@
             "inheritEnvironments": [
                 "linux_x64"
             ],
-            "buildRoot": "${projectDir}/build/.cmake/x64/Release/gcc-10/${name}",
-            "installRoot": "${projectDir}/build/.cmake-install/x64/Release/gcc-10/${name}",
+            "buildRoot": "${projectDir}/build/.cmake/x64/Release/Linux/gcc-10",
+            "installRoot": "${projectDir}/build/.cmake-install/x64/Release/Linux/gcc-10",
             "cmakeCommandArgs": "",
             "buildCommandArgs": "-v",
             "ctestCommandArgs": "",
@@ -637,8 +637,8 @@
             "inheritEnvironments": [
                 "linux_x64"
             ],
-            "buildRoot": "${projectDir}/build/.cmake/x64/RelMinSize/gcc-10/${name}",
-            "installRoot": "${projectDir}/build/.cmake-install/x64/RelMinSize/gcc-10/${name}",
+            "buildRoot": "${projectDir}/build/.cmake/x64/RelMinSize/Linux/gcc-10",
+            "installRoot": "${projectDir}/build/.cmake-install/x64/RelMinSize/Linux/gcc-10",
             "cmakeCommandArgs": "",
             "buildCommandArgs": "-v",
             "ctestCommandArgs": "",
@@ -666,8 +666,8 @@
             "inheritEnvironments": [
                 "linux_x64"
             ],
-            "buildRoot": "${projectDir}/build/.cmake/x64/RelWithDebInfo/gcc-10/${name}",
-            "installRoot": "${projectDir}/build/.cmake-install/x64/RelWithDebInfo/gcc-10/${name}",
+            "buildRoot": "${projectDir}/build/.cmake/x64/RelWithDebInfo/Linux/gcc-10",
+            "installRoot": "${projectDir}/build/.cmake-install/x64/RelWithDebInfo/gcc-10/${nam}",
             "cmakeCommandArgs": "",
             "buildCommandArgs": "-v",
             "ctestCommandArgs": "",

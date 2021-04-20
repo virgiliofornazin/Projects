@@ -24,7 +24,7 @@ endif()
 find_package(Threads REQUIRED)
 
 # Find BOOST libraries
-find_package(Boost REQUIRED)
+find_package(Boost 1.75.0 REQUIRED)
 add_compile_definitions(BOOST_ALL_DYN_LINK)
 include_directories(${Boost_INCLUDE_DIRS})
 link_libraries(${Boost_LIBRARIES})
