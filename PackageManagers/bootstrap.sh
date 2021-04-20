@@ -1,14 +1,14 @@
-#!/bin/sh
+#!/bin/bash
 
 ./unprotect.sh
 
 cd vcpkg
 
-echo" bootstrapping vcpkg..."
+echo "bootstrapping vcpkg..."
 
 ./bootstrap-vcpkg.sh
 
-vcpkg update
+./vcpkg update
 
 package_list="../Packages/vcpkg/package_list.txt"
 
