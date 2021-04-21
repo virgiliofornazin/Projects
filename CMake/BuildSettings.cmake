@@ -1,3 +1,25 @@
+# Virgilio A. Fornazin Development Workspace
+# Copyright (C) 2021, Virgilio Alexandre Fornazin
+# virgiliofornazin@gmail.com
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU Lesser General Public
+# License as published by the Free Software Foundation; either
+# version 3 of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public License
+# along with this program; if not, write to the Free Software Foundation,
+# Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+
+#
+# Build settings for CMake programs
+#
+
 message(STATUS "toolchain file: ${CMAKE_TOOLCHAIN_FILE}")
 
 # Check for interprocedural optimizations at linker
@@ -53,7 +75,7 @@ if(MSVC)
 	# Target system definitions
 	add_compile_definitions(WINVER=0x0601)
 	add_compile_definitions(_WIN32_WINNT=0x0601)
-    
+
 	# Compiler definitions
 	if(CMAKE_BUILD_SETTINGS_COMPILER_WARNINGS)
         add_compile_options(/W4)
@@ -72,13 +94,13 @@ if(MSVC)
 	add_compile_options(/Zc:preprocessor)
 	add_compile_options(/fp:precise)
 
-	# Debug information	
+	# Debug information
 	if(CMAKE_BUILD_SETTINGS_DEBUG_INFORMATION)
 		add_compile_options(/FC)
 		add_compile_options(/Zi)
 		add_compile_options(/Zf)
 	endif()
-	
+
 	# Optimizations
 	if(CMAKE_BUILD_SETTINGS_DEBUG_BUILD)
 		add_link_options(/INCREMENTAL)
@@ -110,7 +132,7 @@ else()
 	add_compile_options(-fexceptions)
 	add_compile_options(-std=c++20)
 
-	# Debug information	
+	# Debug information
 	if(CMAKE_BUILD_SETTINGS_DEBUG_INFORMATION})
 		add_compile_options(-g)
 		add_compile_options(-fno-omit-frame-pointer)
@@ -119,5 +141,5 @@ else()
 	# Optimizations
 	if(CMAKE_BUILD_SETTINGS_DEBUG_BUILD)
 	else()
-	endif()	
+	endif()
 endif()

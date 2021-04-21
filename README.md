@@ -1,2 +1,2 @@
-# Projects
-Development workspace with dependencies and settings for C / C++ / .NET development .editorconfig, .gitignore, .clang-format, package managers (vcpkg, conan), and some useful scripts
+The packages that will be installed are on package-list.txt
+The triplets-windows.txt controls which triplets are built while installing a package
