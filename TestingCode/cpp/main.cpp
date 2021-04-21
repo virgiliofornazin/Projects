@@ -1,7 +1,7 @@
 #define CPP_COMPATIBILITY_NAMESPACE                                             cpp_compatibility
 
 #include <cpp_compatibility/std/mutex>
-#include <cpp_compatibility/std/memory>
+// #include <cpp_compatibility/std/memory>
 
 /*
 #include <cpp_compatibility/latest_features.hpp>
