@@ -1,28 +1,14 @@
 #define CPP_COMPATIBILITY_NAMESPACE                                             cpp_compatibility
 
+#include <cpp_compatibility/std/mutex>
+#include <cpp_compatibility/std/memory>
+
+/*
 #include <cpp_compatibility/latest_features.hpp>
 
 #include <boost/chrono.hpp>
+#include <boost/type_traits.hpp>
 
-namespace CPP_COMPATIBILITY_NAMESPACE
-{
-    namespace chrono = boost::chrono;
-
-    namespace detail
-    {
-        template <class Rep, class Period>
-        static constexpr inline boost::chrono::duration<Rep, Period> duration_from_std(std::chrono::duration<Rep, Period> const& duration)
-        {
-            return boost::chrono::duration<Rep, Period>(duration.count());
-        }
-
-        template <class Clock, class Duration>
-        static constexpr inline boost::chrono::time_point<Clock, Duration> timepoint_from_std(std::chrono::time_point<Clock, Duration> const& timepoint)
-        {
-            return boost::chrono::time_point<Clock, Duration>(boost::chrono::duration_cast<Duration>(timepoint.time_since_epoch()));
-        }
-    }
-}
 
 namespace CPP_COMPATIBILITY_NAMESPACE
 {
@@ -79,21 +65,33 @@ namespace CPP_COMPATIBILITY_NAMESPACE
         template <class Rep, class Period>
         bool try_lock_for(std::chrono::duration<Rep, Period> const& timeout_duration)
         {
-            return try_lock_for(detail::duration_from_std(timeout_duration));
+            return base_type::try_lock_for(detail::duration_from_std(timeout_duration));
         }
 
         template <class Clock, class Duration>
         bool try_lock_until(std::chrono::time_point<Clock, Duration> const& timeout_time)
         {
-            return try_lock_until(detail::timepoint_from_std(timeout_time));
+            return base_type::try_lock_until(detail::time_point_from_std(timeout_time));
         }
     };
+}
+*/
+template <typename Int>
+static inline Int zero() { return 0; }
+
+namespace foo
+{
+    using ::zero;
 }
 
 int main(int /* argc */, char** /* argv */)
 {
-    std::shared_mutex s;
-    cpp_compatibility::shared_lock<std::shared_mutex> sl(s);
+    return foo::zero<int>();
+/*
+    cpp_compatibility::shared_mutex s;
+    s.lock();
+    cpp_compatibility::shared_lock<cpp_compatibility::shared_mutex> sl(s, std::chrono::system_clock::now() + std::chrono::seconds(2));
 
     return 0;
+    */
 }
