@@ -22,12 +22,16 @@ endif()
 
 # Find threads library
 find_package(Threads REQUIRED)
+link_libraries(Threads::Threads)
 
 # Find BOOST libraries
-find_package(Boost 1.75.0 REQUIRED)
+if("${CMAKE_BUILD_TYPE}" STREQUAL "Debug")
+    set(Boost_DEBUG 1)
+endif()
+find_package(Boost 1.75.0 COMPONENTS system thread chrono REQUIRED)
 add_compile_definitions(BOOST_ALL_DYN_LINK)
 include_directories(${Boost_INCLUDE_DIRS})
-link_libraries(${Boost_LIBRARIES})
+link_libraries(Boost::system Boost::thread Boost::chrono)
 
 # Default compiler and linker settings and definitions
 add_compile_definitions(__STDC_WANT_SECURE_LIB__=1)

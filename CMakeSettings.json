@@ -1,7 +1,7 @@
 {
     "configurations": [
         {
-            "name": "arm Debug Windows (MSVC)",
+            "name": "Windows arm Debug (MSVC)",
             "generator": "Ninja",
             "configurationType": "Debug",
             "inheritEnvironments": [
@@ -15,7 +15,7 @@
             "cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake"
         },
         {
-            "name": "arm Release Windows (MSVC)",
+            "name": "Windows arm Release (MSVC)",
             "generator": "Ninja",
             "configurationType": "Release",
             "inheritEnvironments": [
@@ -29,7 +29,7 @@
             "cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake"
         },
         {
-            "name": "arm RelMinSize Windows (MSVC)",
+            "name": "Windows arm RelMinSize (MSVC)",
             "generator": "Ninja",
             "configurationType": "RelMinSize",
             "inheritEnvironments": [
@@ -43,7 +43,7 @@
             "cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake"
         },
         {
-            "name": "arm RelWithDebInfo Windows (MSVC)",
+            "name": "Windows arm RelWithDebInfo (MSVC)",
             "generator": "Ninja",
             "configurationType": "RelWithDebInfo",
             "inheritEnvironments": [
@@ -57,7 +57,7 @@
             "cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake"
         },
         {
-            "name": "arm64 Debug Windows (MSVC)",
+            "name": "Windows arm64 Debug (MSVC)",
             "generator": "Ninja",
             "configurationType": "Debug",
             "inheritEnvironments": [
@@ -71,7 +71,7 @@
             "cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake"
         },
         {
-            "name": "arm64 Release Windows (MSVC)",
+            "name": "Windows arm64 Release (MSVC)",
             "generator": "Ninja",
             "configurationType": "Release",
             "inheritEnvironments": [
@@ -85,7 +85,7 @@
             "cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake"
         },
         {
-            "name": "arm64 RelMinSize Windows (MSVC)",
+            "name": "Windows arm64 RelMinSize (MSVC)",
             "generator": "Ninja",
             "configurationType": "RelMinSize",
             "inheritEnvironments": [
@@ -99,7 +99,7 @@
             "cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake"
         },
         {
-            "name": "arm64 RelWithDebInfo Windows (MSVC)",
+            "name": "Windows arm64 RelWithDebInfo (MSVC)",
             "generator": "Ninja",
             "configurationType": "RelWithDebInfo",
             "inheritEnvironments": [
@@ -113,7 +113,7 @@
             "cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake"
         },
         {
-            "name": "x86 Debug Windows (MSVC)",
+            "name": "Windows x86 Debug (MSVC)",
             "generator": "Ninja",
             "configurationType": "Debug",
             "inheritEnvironments": [
@@ -127,7 +127,7 @@
             "cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake"
         },
         {
-            "name": "x86 Release Windows (MSVC)",
+            "name": "Windows x86 Release (MSVC)",
             "generator": "Ninja",
             "configurationType": "Release",
             "inheritEnvironments": [
@@ -141,7 +141,7 @@
             "cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake"
         },
         {
-            "name": "x86 RelMinSize Windows (MSVC)",
+            "name": "Windows x86 RelMinSize (MSVC)",
             "generator": "Ninja",
             "configurationType": "RelMinSize",
             "inheritEnvironments": [
@@ -155,7 +155,7 @@
             "cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake"
         },
         {
-            "name": "x86 RelWithDebInfo Windows (MSVC)",
+            "name": "Windows x86 RelWithDebInfo (MSVC)",
             "generator": "Ninja",
             "configurationType": "RelWithDebInfo",
             "inheritEnvironments": [
@@ -169,7 +169,7 @@
             "cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake"
         },
         {
-            "name": "x64 Debug Windows (MSVC)",
+            "name": "Windows x64 Debug (MSVC)",
             "generator": "Ninja",
             "configurationType": "Debug",
             "inheritEnvironments": [
@@ -183,7 +183,7 @@
             "cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake"
         },
         {
-            "name": "x64 Release Windows (MSVC)",
+            "name": "Windows x64 Release (MSVC)",
             "generator": "Ninja",
             "configurationType": "Release",
             "inheritEnvironments": [
@@ -197,7 +197,7 @@
             "cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake"
         },
         {
-            "name": "x64 RelMinSize Windows (MSVC)",
+            "name": "Windows x64 RelMinSize (MSVC)",
             "generator": "Ninja",
             "configurationType": "RelMinSize",
             "inheritEnvironments": [
@@ -211,7 +211,7 @@
             "cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake"
         },
         {
-            "name": "x64 RelWithDebInfo Windows (MSVC)",
+            "name": "Windows x64 RelWithDebInfo (MSVC)",
             "generator": "Ninja",
             "configurationType": "RelWithDebInfo",
             "inheritEnvironments": [
@@ -225,7 +225,7 @@
             "cmakeToolchain": "${projectDir}/PackageManagers/vcpkg/scripts/buildsystems/vcpkg.cmake"
         },
         {
-            "name": "x86 Debug WSL (clang-12)",
+            "name": "WSL x86 Debug (clang-12)",
             "generator": "Ninja",
             "configurationType": "Debug",
             "inheritEnvironments": [
@@ -254,7 +254,7 @@
             "wslPath": "${defaultWSLPath}"
         },
         {
-            "name": "x86 Release WSL (clang-12)",
+            "name": "WSL x86 Release (clang-12)",
             "generator": "Ninja",
             "configurationType": "Release",
             "inheritEnvironments": [
@@ -283,7 +283,7 @@
             "wslPath": "${defaultWSLPath}"
         },
         {
-            "name": "x86 RelMinSize WSL (clang-12)",
+            "name": "WSL x86 RelMinSize (clang-12)",
             "generator": "Ninja",
             "configurationType": "RelMinSize",
             "inheritEnvironments": [
@@ -312,7 +312,7 @@
             "wslPath": "${defaultWSLPath}"
         },
         {
-            "name": "x86 RelWithDebInfo WSL (clang-12)",
+            "name": "WSL x86 RelWithDebInfo (clang-12)",
             "generator": "Ninja",
             "configurationType": "RelWithDebInfo",
             "inheritEnvironments": [
@@ -341,7 +341,7 @@
             "wslPath": "${defaultWSLPath}"
         },
         {
-            "name": "x64 Debug WSL (clang-12)",
+            "name": "WSL x64 Debug (clang-12)",
             "generator": "Ninja",
             "configurationType": "Debug",
             "inheritEnvironments": [
@@ -370,7 +370,7 @@
             "wslPath": "${defaultWSLPath}"
         },
         {
-            "name": "x64 Release WSL (clang-12)",
+            "name": "WSL x64 Release (clang-12)",
             "generator": "Ninja",
             "configurationType": "Release",
             "inheritEnvironments": [
@@ -399,7 +399,7 @@
             "wslPath": "${defaultWSLPath}"
         },
         {
-            "name": "x64 RelMinSize WSL (clang-12)",
+            "name": "WSL x64 RelMinSize (clang-12)",
             "generator": "Ninja",
             "configurationType": "RelMinSize",
             "inheritEnvironments": [
@@ -428,7 +428,7 @@
             "wslPath": "${defaultWSLPath}"
         },
         {
-            "name": "x64 RelWithDebInfo WSL (clang-12)",
+            "name": "WSL x64 RelWithDebInfo (clang-12)",
             "generator": "Ninja",
             "configurationType": "RelWithDebInfo",
             "inheritEnvironments": [
@@ -457,7 +457,7 @@
             "wslPath": "${defaultWSLPath}"
         },
         {
-            "name": "x86 Debug WSL (gcc-10)",
+            "name": "WSL x86 Debug (gcc-10)",
             "generator": "Ninja",
             "configurationType": "Debug",
             "inheritEnvironments": [
@@ -486,7 +486,7 @@
             "wslPath": "${defaultWSLPath}"
         },
         {
-            "name": "x86 Release WSL (gcc-10)",
+            "name": "WSL x86 Release (gcc-10)",
             "generator": "Ninja",
             "configurationType": "Release",
             "inheritEnvironments": [
@@ -515,7 +515,7 @@
             "wslPath": "${defaultWSLPath}"
         },
         {
-            "name": "x86 RelMinSize WSL (gcc-10)",
+            "name": "WSL x86 RelMinSize (gcc-10)",
             "generator": "Ninja",
             "configurationType": "RelMinSize",
             "inheritEnvironments": [
@@ -544,7 +544,7 @@
             "wslPath": "${defaultWSLPath}"
         },
         {
-            "name": "x86 RelWithDebInfo WSL (gcc-10)",
+            "name": "WSL x86 RelWithDebInfo (gcc-10)",
             "generator": "Ninja",
             "configurationType": "RelWithDebInfo",
             "inheritEnvironments": [
@@ -573,7 +573,7 @@
             "wslPath": "${defaultWSLPath}"
         },
         {
-            "name": "x64 Debug WSL (gcc-10)",
+            "name": "WSL x64 Debug (gcc-10)",
             "generator": "Ninja",
             "configurationType": "Debug",
             "inheritEnvironments": [
@@ -602,7 +602,7 @@
             "wslPath": "${defaultWSLPath}"
         },
         {
-            "name": "x64 Release WSL (gcc-10)",
+            "name": "WSL x64 Release (gcc-10)",
             "generator": "Ninja",
             "configurationType": "Release",
             "inheritEnvironments": [
@@ -631,7 +631,7 @@
             "wslPath": "${defaultWSLPath}"
         },
         {
-            "name": "x64 RelMinSize WSL (gcc-10)",
+            "name": "WSL x64 RelMinSize (gcc-10)",
             "generator": "Ninja",
             "configurationType": "RelMinSize",
             "inheritEnvironments": [
@@ -660,7 +660,7 @@
             "wslPath": "${defaultWSLPath}"
         },
         {
-            "name": "x64 RelWithDebInfo WSL (gcc-10)",
+            "name": "WSL x64 RelWithDebInfo (gcc-10)",
             "generator": "Ninja",
             "configurationType": "RelWithDebInfo",
             "inheritEnvironments": [
