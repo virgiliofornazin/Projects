@@ -1,6 +1,9 @@
-# Virgilio A. Fornazin Development Workspace
-# Copyright (C) 2021, Virgilio Alexandre Fornazin
-# virgiliofornazin@gmail.com
+# -----------------------------------------------------------------------------
+#
+# This file is part of the Virgilio Alexandre Fornazin Development Workspace
+# Copyright (C) 2021, Virgilio Alexandre Fornazin (virgiliofornazin@gmail.com)
+#
+# -----------------------------------------------------------------------------
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -9,33 +12,54 @@
 #
 # This program is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-# Lesser General Public License for more details.
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU Lesser General Public License for more details.
 #
 # You should have received a copy of the GNU Lesser General Public License
 # along with this program; if not, write to the Free Software Foundation,
 # Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
-
 #
-# Build settings for CMake programs
+# -----------------------------------------------------------------------------
 #
+# $/CMake/BuiidSettinogs.cmake
+#
+# CMake build settings for all workspace projects
+#
+# -----------------------------------------------------------------------------
 
-message(STATUS "toolchain file: ${CMAKE_TOOLCHAIN_FILE}")
+# Flags that control code generation below
+set(CMAKE_BUILD_SETTINGS_COMPILER_WARNINGS ON)
 
-# Check for interprocedural optimizations at linker
-cmake_policy(SET CMP0069 NEW)
-include(CheckIPOSupported)
-check_ipo_supported(RESULT CMAKE_BUILD_SETTINGS_IPO_SUPPORTED LANGUAGES C CXX)
+if(NOT ("${CMAKE_TOOLCHAIN_FILE}" STREQUAL ""))
+    message(STATUS "Toolchain file: ${CMAKE_TOOLCHAIN_FILE}")
+endif()
+
+# Check for interprocedural optimizations at linker for Release and RelWithDebInfo builds
+if(("${CMAKE_BUILD_TYPE}" STREQUAL "Release") OR ("${CMAKE_BUILD_TYPE}" STREQUAL "RelWithDebInfo"))
+    cmake_policy(SET CMP0069 NEW)
+    include(CheckIPOSupported)
+    check_ipo_supported(RESULT CMAKE_BUILD_SETTINGS_IPO_SUPPORTED LANGUAGES C CXX)
+    if(CMAKE_BUILD_SETTINGS_IPO_SUPPORTED)
+        set(CMAKE_INTERPROCEDURAL_OPTIMIZATION ON)
+        message(STATUS "Interprocedural optimizations enabled")
+    endif()
+endif()
 
 # Check for position-independent code flags
-cmake_policy(SET CMP0083 NEW)
-include(CheckPIESupported)
-check_pie_supported(LANGUAGES C CXX)
-if(CMAKE_C_LINK_PIE_SUPPORTED AND CMAKE_CXX_LINK_PIE_SUPPORTED)
-    set(CMAKE_BUILD_SETTINGS_PIE_SUPPORTED TRUE)
-else()
-    set(CMAKE_BUILD_SETTINGS_PIE_SUPPORTED FALSE)
+set(CMAKE_BUILD_SETTINGS_PIE_SUPPORTED OFF)
+if(NOT ("${CMAKE_BUILD_TYPE}" STREQUAL "RelMinSize"))
+    set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+    message(STATUS "Position independent code enabled for libraries")
+    cmake_policy(SET CMP0083 NEW)
+    include(CheckPIESupported)
+    check_pie_supported(LANGUAGES C CXX)
+    if(CMAKE_C_LINK_PIE_SUPPORTED AND CMAKE_CXX_LINK_PIE_SUPPORTED)
+        set(CMAKE_BUILD_SETTINGS_PIE_SUPPORTED ON)
+        message(STATUS "Position independent code enabled for executables")
+    endif()
 endif()
+
+message(STATUS "PIE: ${CMAKE_C_LINK_OPTIONS_PIE}")
 
 # Add GNU settings when needed
 if(NOT (MSVC OR MINGW))
@@ -59,18 +83,6 @@ link_libraries(Boost::system Boost::thread Boost::chrono)
 add_compile_definitions(__STDC_WANT_SECURE_LIB__=1)
 add_compile_definitions(__STDC_WANT_LIB_EXT1__=1)
 
-# Flags that control code generation below
-set(CMAKE_BUILD_SETTINGS_COMPILER_WARNINGS TRUE)
-set(CMAKE_BUILD_SETTINGS_DEBUG_BUILD FALSE)
-set(CMAKE_BUILD_SETTINGS_DEBUG_INFORMATION FALSE)
-
-if("${CMAKE_BUILD_TYPE}" STREQUAL "Debug")
-	set(_CMAKE_GENERATE_DEBUG_BUILD TRUE)
-	set(_CMAKE_INCLUDE_DEBUG_INFORMATION TRUE)
-elseif("${CMAKE_BUILD_TYPE}" STREQUAL "RelWithDebInfo")
-	set(_CMAKE_INCLUDE_DEBUG_INFORMATION TRUE)
-endif()
-
 if(MSVC)
 	# Target system definitions
 	add_compile_definitions(WINVER=0x0601)
@@ -80,6 +92,7 @@ if(MSVC)
 	if(CMAKE_BUILD_SETTINGS_COMPILER_WARNINGS)
         add_compile_options(/W4)
         add_compile_options(/WX)
+    else()
         add_compile_definitions(_CRT_NONSTDC_NO_DEPRECATE)
 	    add_compile_definitions(_CRT_SECURE_NO_WARNINGS)
 	    add_compile_definitions(_WINSOCK_DEPRECATED_NO_WARNINGS)
@@ -93,25 +106,39 @@ if(MSVC)
 	add_compile_options(/Zc:__cplusplus)
 	add_compile_options(/Zc:preprocessor)
 	add_compile_options(/fp:precise)
+	add_compile_options(/Gy)
+
+    if(CMAKE_POSITION_INDEPENDENT_CODE)
+        add_link_options(/DYNAMICBASE)
+        add_link_options(/LARGEADDRESSAWARE)
+        add_link_options(/HIGHENTROPYVA)
+    endif()
+
+    add_link_options(/GUARD:CF)
+    add_link_options(/CETCOMPAT)
+    add_link_options(/NXCOMPAT)
+    add_link_options(/WX)
 
 	# Debug information
-	if(CMAKE_BUILD_SETTINGS_DEBUG_INFORMATION)
+	if(("${CMAKE_BUILD_TYPE}" STREQUAL "Debug") OR ("${CMAKE_BUILD_TYPE}" STREQUAL "RelWithDebInfo"))
 		add_compile_options(/FC)
-		add_compile_options(/Zi)
+        add_compile_options(/Zi)
 		add_compile_options(/Zf)
+        add_link_options(/MAP)
+        add_link_options(/MAPINFO:EXPORTS)
 	endif()
 
 	# Optimizations
-	if(CMAKE_BUILD_SETTINGS_DEBUG_BUILD)
-		add_link_options(/INCREMENTAL)
+	if("${CMAKE_BUILD_TYPE}" STREQUAL "Debug")
 	else()
 		add_compile_options(/Oi)
-		add_compile_options(/Ot)
-		add_compile_options(/Gy)
-		add_link_options(/INCREMENTAL:NO)
-		add_link_options(/LTCG)
-		add_link_options(/OPT:REF)
-		add_link_options(/OPT:ICF)
+        if("${CMAKE_BUILD_TYPE}" STREQUAL "RelMinSize")
+            add_compile_options(/Os)
+        else()
+            add_compile_options(/Ot)
+		endif()
+    	add_link_options(/OPT:REF)
+	    add_link_options(/OPT:ICF)
 	endif()
 else()
 	# System definitions
@@ -133,13 +160,13 @@ else()
 	add_compile_options(-std=c++20)
 
 	# Debug information
-	if(CMAKE_BUILD_SETTINGS_DEBUG_INFORMATION})
+	if(("${CMAKE_BUILD_TYPE}" STREQUAL "Debug") OR ("${CMAKE_BUILD_TYPE}" STREQUAL "RelWithDebInfo"))
 		add_compile_options(-g)
 		add_compile_options(-fno-omit-frame-pointer)
 	endif()
 
 	# Optimizations
-	if(CMAKE_BUILD_SETTINGS_DEBUG_BUILD)
+	if("${CMAKE_BUILD_TYPE}" STREQUAL "Debug")
 	else()
 	endif()
 endif()

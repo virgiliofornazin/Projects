@@ -23,17 +23,30 @@ rem Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 rem
 rem -----------------------------------------------------------------------------
 rem
-rem $/bootstrap.bat
+rem $/PackageManagers/build_packages.bat
 rem
-rem Bootstrap script to prepare workspace on first use
+rem Build all packages and dependencies of all package managers
 rem
 rem -----------------------------------------------------------------------------
 
-git submodule init
-git submodule update
+pushd %~dp0
 
-pushd %~dp0\PackageManagers
+call unprotect.bat
 
-call build_packages.bat
+cd vcpkg
+
+echo bootstrapping vcpkg...
+
+call bootstrap-vcpkg.bat
+
+for /f %%G in (../PackageList/vcpkg/package_list.txt) do call ../../Scripts/vcpkg_install_for_windows.bat %%G
+
+vcpkg list
+
+call %~dp0\protect.bat
+
+echo list of installed vcpkg packages:
+
+vcpkg list
 
 popd
