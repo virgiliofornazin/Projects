@@ -2,9 +2,12 @@
 .bak
 .tmp
 
-# VS/VSCode/CMake
+# VS/VSCode
 .vs/
 .vscode/
+
+# CMake
+CMakeUserPresets.json
 .cmake/
 build/.cmake/
 build/.cmake-install/
