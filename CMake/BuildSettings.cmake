@@ -71,10 +71,7 @@ find_package(Threads REQUIRED)
 link_libraries(Threads::Threads)
 
 # Find BOOST libraries
-if("${CMAKE_BUILD_TYPE}" STREQUAL "Debug")
-    set(Boost_DEBUG 1)
-endif()
-find_package(Boost 1.75.0 COMPONENTS system thread chrono filesystem REQUIRED)
+find_package(Boost COMPONENTS system thread chrono filesystem REQUIRED)
 add_compile_definitions(BOOST_ALL_DYN_LINK)
 include_directories(${Boost_INCLUDE_DIRS})
 link_libraries(Boost::system Boost::thread Boost::chrono Boost::filesystem)
