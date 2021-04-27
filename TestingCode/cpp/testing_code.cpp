@@ -35,11 +35,13 @@
 #include <cpp_compatibility/std/chrono>
 #include <cpp_compatibility/std/string_view>
 #include <cpp_compatibility/std/tuple>
+#include <cpp_compatibility/std/typeindex>
 #include <cpp_compatibility/std/filesystem>
-#include <cpp_compatibility/std/stop_token>
+// #include <cpp_compatibility/std/stop_token>
 #include <cpp_compatibility/std/thread>
 #include <cpp_compatibility/std/functional>
 #include <cpp_compatibility/std/utility>
+#include <cpp_compatibility/std/memory>
 
 int main(int /* argc */, char** /* argv */)
 {

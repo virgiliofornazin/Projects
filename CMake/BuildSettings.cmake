@@ -59,8 +59,6 @@ if(NOT ("${CMAKE_BUILD_TYPE}" STREQUAL "RelMinSize"))
     endif()
 endif()
 
-message(STATUS "PIE: ${CMAKE_C_LINK_OPTIONS_PIE}")
-
 # Add GNU settings when needed
 if(NOT (MSVC OR MINGW))
     include(GNUInstallDirs)

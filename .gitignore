@@ -26,3 +26,4 @@ build/*.filters
 build/*.vcxproj
 build/*.sln
 build/*.ninja
+out/
