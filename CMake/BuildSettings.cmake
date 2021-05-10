@@ -113,14 +113,14 @@ if(MSVC)
     add_link_options(/CETCOMPAT)
     add_link_options(/NXCOMPAT)
     add_link_options(/WX)
+    add_link_options(/MAP)
+    add_link_options(/MAPINFO:EXPORTS)
 
 	# Debug information
 	if(("${CMAKE_BUILD_TYPE}" STREQUAL "Debug") OR ("${CMAKE_BUILD_TYPE}" STREQUAL "RelWithDebInfo"))
 		add_compile_options(/FC)
         add_compile_options(/Zi)
 		add_compile_options(/Zf)
-        add_link_options(/MAP)
-        add_link_options(/MAPINFO:EXPORTS)
 	endif()
 
 	# Optimizations
