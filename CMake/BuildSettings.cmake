@@ -150,9 +150,13 @@ else()
 	    add_compile_options(-pedantic-errors)
     endif()
 
-	# C+ language definitions
+	# C++ language definitions
 	add_compile_options(-fexceptions)
 	add_compile_options(-std=c++20)
+
+    if("${CMAKE_C_COMPILER_ID}" STREQUAL "GNU")
+        add_compile_options(-fcoroutines)
+    endif()
 
 	# Debug information
 	if(("${CMAKE_BUILD_TYPE}" STREQUAL "Debug") OR ("${CMAKE_BUILD_TYPE}" STREQUAL "RelWithDebInfo"))
